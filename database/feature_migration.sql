@@ -1,5 +1,3 @@
-USE eduquiz_db;
-
 ALTER TABLE courses
 ADD COLUMN visibility ENUM(
     'public',

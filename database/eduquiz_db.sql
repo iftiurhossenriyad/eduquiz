@@ -1,7 +1,3 @@
-CREATE DATABASE IF NOT EXISTS eduquiz_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-
-USE eduquiz_db;
-
 CREATE TABLE users (
     user_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(120) NOT NULL,
