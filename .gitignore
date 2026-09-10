@@ -2,6 +2,7 @@
 .env
 .env.*
 !.env.example
+config/db.local.php
 .vscode/
 .idea/
 
