@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+
+:root {
+    --ink: #17212b;
+    --ink-soft: #566575;
+    --paper: #f6f7f2;
+    --panel: #ffffff;
+    --mint: #b7e4c7;
+    --mint-deep: #2f7d5b;
+    --coral: #f08a6a;
+    --gold: #f2c66d;
+    --line: #dfe5df;
+    --shadow: 0 16px 35px rgba(23, 33, 43, .08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body.eduquiz-shell {
+    background: var(--paper) !important;
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+}
+
+.eduquiz-shell h1,
+.eduquiz-shell h2,
+.eduquiz-shell h3,
+.eduquiz-shell h4,
+.eduquiz-shell h5,
+.eduquiz-shell .navbar-brand {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: 0;
+}
+
+.eduquiz-shell .navbar {
+    background: var(--ink) !important;
+    border-bottom: 4px solid var(--coral);
+    padding: 14px 0;
+}
+
+.eduquiz-shell .navbar-brand {
+    font-weight: 700;
+    letter-spacing: .02em;
+}
+
+.eduquiz-shell .navbar-brand::before {
+    content: '●';
+    color: var(--mint);
+    margin-right: 9px;
+    font-size: .8em;
+}
+
+.eduquiz-shell .container {
+    max-width: 1180px;
+}
+
+.eduquiz-shell .card {
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    background: var(--panel);
+}
+
+.eduquiz-shell .card-header {
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .18);
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: .01em;
+}
+
+.eduquiz-shell .bg-primary {
+    background: var(--mint-deep) !important;
+}
+
+.eduquiz-shell .bg-success {
+    background: var(--mint-deep) !important;
+}
+
+.eduquiz-shell .bg-info {
+    background: var(--ink) !important;
+}
+
+.eduquiz-shell .bg-warning {
+    background: var(--gold) !important;
+}
+
+.eduquiz-shell .btn-primary,
+.eduquiz-shell .btn-success {
+    background: var(--mint-deep);
+    border-color: var(--mint-deep);
+}
+
+.eduquiz-shell .btn-primary:hover,
+.eduquiz-shell .btn-success:hover {
+    background: #245f45;
+    border-color: #245f45;
+}
+
+.eduquiz-shell .btn-outline-primary {
+    color: var(--mint-deep);
+    border-color: var(--mint-deep);
+}
+
+.eduquiz-shell .btn-outline-primary:hover {
+    background: var(--mint-deep);
+    border-color: var(--mint-deep);
+}
+
+.eduquiz-shell .table {
+    --bs-table-striped-bg: #f5f8f4;
+}
+
+.eduquiz-shell .table thead th {
+    color: var(--ink-soft);
+    font-size: .76rem;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+.eduquiz-shell .list-group-item {
+    border-color: var(--line);
+}
+
+.eduquiz-shell .dashboard-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+    padding: 30px 0 22px;
+}
+
+.eduquiz-shell .dashboard-intro h1 {
+    font-size: clamp(1.8rem, 3vw, 2.7rem);
+    margin: 0;
+}
+
+.eduquiz-shell .dashboard-intro p {
+    color: var(--ink-soft);
+    margin: 7px 0 0;
+}
+
+.eduquiz-shell .eyebrow {
+    color: var(--coral);
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.eduquiz-shell .metric-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 122px;
+}
+
+.eduquiz-shell .metric-card::after {
+    content: '';
+    width: 86px;
+    height: 86px;
+    position: absolute;
+    right: -25px;
+    bottom: -30px;
+    border-radius: 50%;
+    background: var(--mint);
+    opacity: .42;
+}
+
+.eduquiz-shell .metric-card .metric-value {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.eduquiz-shell .section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 28px 0 12px;
+}
+
+.eduquiz-shell .section-title h2 {
+    font-size: 1.15rem;
+    margin: 0;
+}
+
+.eduquiz-shell .accent-panel {
+    border-left: 5px solid var(--coral);
+}
+
+.eduquiz-shell .notification-unread {
+    background: #e5f4e9 !important;
+    border-left: 4px solid var(--mint-deep);
+}
+
+.eduquiz-shell .course-tile {
+    min-height: 165px;
+    border-top: 5px solid var(--mint-deep);
+}
+
+.eduquiz-shell .course-tile:nth-child(3n) {
+    border-top-color: var(--coral);
+}
+
+.eduquiz-shell .course-tile:nth-child(3n+1) {
+    border-top-color: var(--gold);
+}
+
+@media (max-width: 700px) {
+    .eduquiz-shell .dashboard-intro {
+        display: block;
+    }
+
+    .eduquiz-shell .dashboard-intro .btn {
+        margin-top: 18px;
+        width: 100%;
+    }
+}
